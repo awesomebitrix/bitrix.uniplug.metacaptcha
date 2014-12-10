@@ -3,6 +3,7 @@
 namespace UniPlug\MetaCaptcha;
 
 use Bitrix\Main\Localization\Loc;
+
 Loc::loadMessages(__FILE__);
 
 class System {
@@ -29,6 +30,8 @@ class System {
 				"SRC" => '/bitrix/tools/captcha.php?captcha_code=' . $SID,
 			),
 			"HTML" => false,
+			"CSS"  => false,
+			"JS"   => false,
 		);
 
 		return $arResult;
